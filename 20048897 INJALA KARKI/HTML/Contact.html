@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Contact page">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.Js"></script>
+    <style>
+        /* styling the body part  */
+        body {
+            background-color: black;
+        }
+        /* using the same font size family and width for all section  */
+        section {
+            font-family: 'ubuntu', sans-serif;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .detail {
+            margin-left: 50px;
+            color: white;
+            font-size: 30px;
+
+        }
+
+        .information {
+            display: flex;
+            margin-top: 30px;
+            color: white;
+            margin-left: 60px;
+            font-size: 20px;
+        }
+
+        .text {
+            font-size: 'ubuntu', sans-serif;
+            font-size: 40px;
+            color: red;
+            margin-left: 600px;
+            margin-top: 30px;
+        }
+
+        .full-name {
+            display: flex;
+            margin-left: 10px;
+            height: 55px;
+            margin-top: 10px;
+            width: 50%;
+        }
+        /* styling the input attribute  */
+        input {
+            height: 55px;
+            border: none;
+            background-color: rgb(51, 51, 51);
+            font-family: 'poppins', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: normal;
+            text-align: start;
+            cursor: text;
+
+
+        }
+
+        .first {
+            height: 45px;
+        }
+
+        .first input {
+            width: 285px;
+
+        }
+
+        .last input {
+            width: 283px;
+        }
+
+        .last {
+            height: 45px;
+            margin-left: 28px;
+        }
+
+        .email-field {
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+
+        .email-field input {
+            width: 595px;
+        }
+        /* styling the textarea  */
+        textarea {
+            background-color: rgb(51, 51, 51);
+            font-family: 'poppins', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .gender {
+            display: flex;
+            font-size: 25px;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60%;
+            color: #fff;
+        }
+
+        /* styling the radio button  */
+        input[type=radio] {
+            border: 0px;
+            width: 20px;
+            height: 1em;
+            cursor: pointer;
+        }
+
+        /* styling the button  */
+        button {
+            background-color: red;
+            margin-top: 10px;
+            margin-left: 355px;
+            height: 70px;
+            width: 250px;
+            color: #fff;
+            font-family: 'poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        /* hovering effect in button  */
+        button:hover {
+            color: black;
+        }
+
+        .main-part {
+            display: flex;
+        }
+
+        .ussop {
+            float: right;
+            height: 500px;
+            width: 600px;
+            margin-left: 150px;
+            margin-top: 10px;
+        }
+
+        .ussop img {
+            height: 80%;
+            width: 100%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- navigtion bar starts  -->
+        <header>
+            <nav class="navbar">
+                <div class="navi">
+                    <div class="logo">Kar<span style="color:red;">kio.</span></div>
+                    <ul class="menu">
+                        <li><a href="home page.html">Home</a></li>
+                        <li><a href="CV.html">CV</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                        <li class="active"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <!-- Contact information  -->
+            <div class="text">CONTACT ME</div>
+            <div class="information">
+                <div style="width: 33.33%;"> <span style="color: red;"> ADDRESS:</span> <br> Pepsicola townplanning-31
+                    <br> Kathmandu </div>
+                <div style="width: 33.33%;"> <span style="color: red;">EMAIL:</span> <br> injalakarki21@gmail.com</div>
+                <div style=" width: 33.33%;"> <span style="color: red;"> PHONE:</span> <br> +977 9864590194</div>
+            </div>
+            <div class="main-part">
+                <div class="detail">
+                    <!-- form starts here  -->
+                    <form name="contactForm" onsubmit="validatefrom()">
+                        <div class="full-name">
+                            <div class="first">
+                                <input type="text" name="firstname" placeholder="First Name">
+                            </div>
+                            <div class="last">
+                                <input type="text" name="lastname" placeholder="Last Name">
+                            </div>
+
+                        </div>
+                        <div class="email-field">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="gender">
+                            <p>Gender:
+                                <input type="radio" name="gender" value="male" checked> Male
+                                <input type="radio" name="gender" value="female"> Female </p>
+                        </div>
+                        <div class="message-area">
+                            <textarea name="message" rows="10" cols="60" placeholder="Enter Message"></textarea>
+                            <p><button type="submit" value="Send">submit </button></p>
+                        </div>
+                    </form>
+                </div>
+                <aside class="ussop">
+                    <img src="../image/ussop.jpg" alt="Image">
+                    <span style="color: red; font-size: 30px;">Thank you  for visiting my website</span>
+                    <br>
+                    <br>
+                    <p id="date" style="color: white;"></p>
+                </aside>
+            </div>
+            <br>
+
+            <!-- using internal css for dat and time  -->
+            <script>
+                function A_Date() {
+                    document.getElementById('date').innerHTML = Date();
+                    setTimeout(A_Date, 1000);
+                }
+                A_Date();
+            </script>
+
+    </div>
+    </section>
+
+    <footer>
+
+        <div class="media">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../image/facebook.png" alt="Image">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../image/insta.png" alt="Image">
+            </a>
+
+            <a href="https://www.snapchat.com/" target="_blank">
+                <img src="../image/snap.png" alt="Image">
+            </a>
+
+            <a href="https://www.gmail.com/" target="_blank">
+                <img src="../image/mail.png" alt="Image">
+            </a>
+            
+            <div class="copy-right">
+                <!-- using HTML entity for the copy right symbol -->
+                <span style="color: white;"> &copy; 2021 All rights reserved. | <span>Created By Injala Karki </span>
+                </span>
+            </div>
+        </div>
+
+    </footer>
+    </div>
+</body>
+
+</html>

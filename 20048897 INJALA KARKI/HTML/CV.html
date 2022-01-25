@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is CV page.">
+    <title>CV</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* styling for the body part of CV  */
+        body {
+            background-color: black;
+            margin-right: 20px;
+            font-family: 'ubuntu', sans-serif;
+        }
+
+        /* giving font weight and size for the heading tag  */
+        h4 {
+            font-weight: 600;
+            color: red;
+            font-size: 40px;
+        }
+
+        .info {
+            height: 100%;
+            color: white;
+            float: left;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+
+        }
+
+        .line {
+            background-color: red;
+            height: 30px;
+            border: 1px solid red;
+            margin-top: 180px;
+
+        }
+
+        .name {
+            float: right;
+            text-align: right;
+        }
+
+        .detail {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        .skill {
+            display: flex;
+
+        }
+
+        .softskill {
+            border: 1px solid white;
+            justify-content: center;
+            margin-left: 400px;
+            height: 270px;
+            width: 360px;
+
+        }
+
+        .study p {
+            font-size: 25px;
+        }
+        /* styling the paragraph tag which has p1 as class name  */
+        .p1 {
+            margin-left: 160px;
+            font-size: 20px;
+        }
+
+        .refrence {
+            margin-left: 90px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar starts  -->
+    <header>
+        <nav class="navbar">
+
+            <div class="navi">
+
+                <div class="logo">Kar<span style="color:red;">kio.</span></div>
+                <ul class="menu">
+                    <li><a href="home page.html">Home</a></li>
+                    <li class="active"><a href="#">CV</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="info" id="info">
+
+        <div class="name">
+
+            <h1>Injala <span style="color: red;">Karki</span> </h1>
+            <p>Student</p>
+            <ul class="detail">
+                <li>Pepsicola townplanning-32,Kathmandu</li>
+                <li>9864590194, 9803120815</li>
+                <li>injalakarki21@gmail.com</li>
+            </ul>
+        </div>
+        <hr class="line">
+        <br>
+        <div>
+            <h4>About me</h4>
+
+            <!-- inline CSS for the paragraph tag -->
+            <p style="font-size: 20px; margin-left: 90px;">Motivated student with formal knowledge gained through
+                excellent classroom performance. Offering excellent communication and organizational abilities along
+                with skill in database and fluency in virtual work. Known for efficiency and best-in-class time
+                management.</p>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Skills</h4>
+        <div class="skill">
+            <p style="font-size: 20px; margin-left: 90px;">
+                <!-- internal Javascript for listing the skills using script tag -->
+                <script>
+                    var skill = ["Java", "HTML", "Cascading Style Sheet(CSS)", "Javascript", "MySQL", "C++",
+                        "PC assemble/disassemble", "Linux(Kali, Ubuntu)", "Circuit design",
+                        "Sublime, Visual Studio Code ", "BlueJ", "Xampp"];
+
+                    for (var i = 0; i < skill.length; i++) {
+                        document.write(skill[i] + "<br/>");
+                    }
+                </script>
+            </p>
+
+            <div class="softskill">
+                <h4 style="margin:10px 10px;">Soft skills</h4>
+                <p style="list-style: none; font-size: 20px; margin-left: 20px;">
+                    <!-- using script tag for inserting Javascript  -->
+                    <script>
+                        var softskill = ["Event Organization", "Excellent work ethic",
+                            "Bilingual in English and Nepali",
+                            "Leadership", "Research", "Multitasking abilities",
+                            "Sketching, Painting"];
+
+                        for (var a = 0; a < softskill.length; a++) {
+                            document.write(softskill[a] + "<br/>");
+                        }
+                    </script>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Eduation</h4>
+        <br>
+        <div class="study">
+            <!-- using &emsp for giving 4 tabs and &ensp for two tabs -->
+            <p>2005-2018 &emsp; SEE: Mathematics, Computer</p>
+            <p class="p1">Khimti Project School-Tamakoshi-5, Dolakha</p>
+            <br>
+
+            <p>2018-2020 &emsp; NEB: Biology</p>
+            <p class="p1">Liverpool College-Naya Baneshowor, Kathmandu</p>
+            <br>
+            <!-- using super tag  -->
+            <p>2021-Current&ensp;BIT: Computing (1<sup>st</sup> year running)</p>
+            <p class="p1">Islingtion College-Kamalpokhari,Kathmandu</p>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        <h4>Work Experience</h4>
+        <br>
+        <div style="margin-left: 90px; font-size: 20px;">
+            <ul>
+                <li>Made Hospital database to record necessary information for effective day to day routine of hospital.
+                </li>
+                <li>Helped with office tasks including taking messages, scanning documents and answering phone
+                    inquiries.</li>
+                <li>Organized Gala Day I and II to promote and help orphans children.</li>
+                <li>Work as adviser in NGO Prosperous Nepal Youth Society(PNYS)</li>
+                <li>Work as tresaurer of organization Well-Wishers Nepal</li>
+                <li>Collect information to research Java and developed Java program. </li>
+
+            </ul>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h4>Projects Done</h4>
+        <br>
+        <div style="margin-left: 90px; font-size: 20px;">
+            <!-- nested unordered list  -->
+            <ul>
+                <li>Work with Java project on the topic of</li>
+                <ol style="margin-left: 90px;">
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                    <li>Encapsulation</li>
+                </ol>
+
+                <li>Work on database project about Hospital management system </li>
+                <li> Done PC assemble and disassemble</li>
+
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <h4>Languages</h4>
+        <br>
+        <ul style="margin-left: 90px; font-size: 20px;">
+            <li>Nepali</li>
+            <li>English</li>
+            <li>Sign language</li>
+
+        </ul>
+        <br>
+        <hr>
+        <br>
+
+        <h4>Refrences</h4>
+        <br>
+        <div class="refrence">
+            <p>Kanti Thapa Karki <br>
+                Principal, Khimti Project School <br>
+                9803120716 </p>
+            <br>
+            <p>Sudan Dotel <br>
+                Principal, Liverpool College <br>
+                9860542301</p>
+            <br>
+            <p>Pravakar Sah <br>
+                President, Prosperous Youth Nepal Society <br>
+                9812090081</p>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="media">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../image/facebook.png" alt="Image">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../image/insta.png" alt="Image">
+            </a>
+
+            <a href="https://www.snapchat.com/" target="_blank">
+                <img src="../image/snap.png" alt="Image">
+            </a>
+
+            <a href="https://www.gmail.com/" target="_blank">
+                <img src="../image/mail.png" alt="Image">
+            </a>
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
